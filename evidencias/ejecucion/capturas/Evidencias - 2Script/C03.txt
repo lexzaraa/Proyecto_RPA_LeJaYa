@@ -1,0 +1,9 @@
+SOLICITUD FICTICIA - CURSO RPA
+
+Identificador: SOL-803
+
+Solicitante: Persona ficticia Celia
+
+Área: Biblioteca
+
+Descripción: Revisar la lámpara del espacio de lectura.
