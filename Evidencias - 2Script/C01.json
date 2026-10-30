@@ -1,0 +1,8 @@
+{
+  "fuente": "entradas\\C01.pdf",
+  "fuente_sha256": "8143ad503678986c1af28bdda2a5ef8c30f402aeb6d2435aa02152f88d454184",
+  "idioma": "spa",
+  "dpi_pdf": 300,
+  "motor": "5.5.3.20260724",
+  "configuracion": "--psm 6"
+}
