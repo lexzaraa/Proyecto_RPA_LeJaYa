@@ -1,0 +1,122 @@
+{
+  "C01:reglas": {
+    "firma": "909342b13bd10b824be1ee390c748bf4827ea8e3971518f57efbfccd0e13686b",
+    "aprobado": true,
+    "revisor": "Jael Itza",
+    "campos_verificados": {
+      "id_solicitud": true,
+      "solicitante": true,
+      "area": true,
+      "tipo": true,
+      "descripcion": true
+    },
+    "diagnostico": {
+      "id_solicitud": "pendiente",
+      "solicitante": "pendiente",
+      "area": "pendiente",
+      "tipo": "pendiente",
+      "descripcion": "pendiente"
+    },
+    "notas": "Comparar cada campo con el documento original."
+  },
+  "C01:llm_simulado": {
+    "firma": "006b724366c92222c17ecdd94b2b0af2775bbc43430c86c49500051e1a8b31ff",
+    "aprobado": false,
+    "revisor": "",
+    "campos_verificados": {
+      "id_solicitud": false,
+      "solicitante": false,
+      "area": false,
+      "tipo": false,
+      "descripcion": false
+    },
+    "diagnostico": {
+      "id_solicitud": "pendiente",
+      "solicitante": "pendiente",
+      "area": "pendiente",
+      "tipo": "pendiente",
+      "descripcion": "pendiente"
+    },
+    "notas": "Comparar cada campo con el documento original."
+  },
+  "C02:reglas": {
+    "firma": "9070f50b0ae462fe6261a2b672df352cf4252778ab12c50a6affc443495ba321",
+    "aprobado": true,
+    "revisor": "Jael Itza",
+    "campos_verificados": {
+      "id_solicitud": true,
+      "solicitante": true,
+      "area": true,
+      "tipo": true,
+      "descripcion": true
+    },
+    "diagnostico": {
+      "id_solicitud": "pendiente",
+      "solicitante": "pendiente",
+      "area": "pendiente",
+      "tipo": "pendiente",
+      "descripcion": "pendiente"
+    },
+    "notas": "Comparar cada campo con el documento original."
+  },
+  "C02:llm_simulado": {
+    "firma": "8e440214e920de73a68e5e08b1f40f868fc0379cc79f0cde3c48f7cee6caccfd",
+    "aprobado": false,
+    "revisor": "",
+    "campos_verificados": {
+      "id_solicitud": false,
+      "solicitante": false,
+      "area": false,
+      "tipo": false,
+      "descripcion": false
+    },
+    "diagnostico": {
+      "id_solicitud": "pendiente",
+      "solicitante": "pendiente",
+      "area": "pendiente",
+      "tipo": "pendiente",
+      "descripcion": "pendiente"
+    },
+    "notas": "Comparar cada campo con el documento original."
+  },
+  "C03:reglas": {
+    "firma": "2a7eb0558ea82b01f63f8c36edd3b6194c5dce9c3ee88f6eb57e2ba197d1d1b2",
+    "aprobado": false,
+    "revisor": "",
+    "campos_verificados": {
+      "id_solicitud": false,
+      "solicitante": false,
+      "area": false,
+      "tipo": false,
+      "descripcion": false
+    },
+    "diagnostico": {
+      "id_solicitud": "pendiente",
+      "solicitante": "pendiente",
+      "area": "pendiente",
+      "tipo": "pendiente",
+      "descripcion": "pendiente"
+    },
+    "notas": "Comparar cada campo con el documento original."
+  },
+  "C03:llm_simulado": {
+    "firma": "9b4e16d6723ec63e820c4db4945d4862b640b7824b3f31bf431704c4d529085f",
+    "aprobado": false,
+    "revisor": "",
+    "campos_verificados": {
+      "id_solicitud": false,
+      "solicitante": false,
+      "area": false,
+      "tipo": false,
+      "descripcion": false
+    },
+    "diagnostico": {
+      "id_solicitud": "pendiente",
+      "solicitante": "pendiente",
+      "area": "pendiente",
+      "tipo": "pendiente",
+      "descripcion": "pendiente"
+    },
+    "notas": "Comparar cada campo con el documento original."
+  }
+}
