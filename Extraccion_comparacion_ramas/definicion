@@ -1,1 +1,14 @@
 Con el mismo texto OCR y las mismas validaciones, reglas y LLM simulado dieron resultados idénticos en C01, C02 y C03, por lo que la comparación no distingue entre métodos.
+
+Modificación de extraer_reglas (caso C02)
+Estos archivos corresponden a la modificación de la función extraer_reglas (scripts/comun.py), realizada a partir del resultado observado en el caso C02.
+
+Resultado inicial (v1): las reglas solo reconocían campos con etiqueta al inicio de línea. C02 está redactado en párrafo libre, por lo que solo se obtuvo id_solicitud mediante el patrón SOL-###; solicitante, área, tipo y descripción quedaron vacíos.
+
+Modificación (v2): se agregó un respaldo general (PATRONES_LIBRES) que reconoce las frases “presentada por”, “área de”, “tipo” y “Se solicita:”, y solo se aplica a campos sin etiqueta que sigan vacíos. No contiene datos de ningún caso, no usa los catálogos de áreas ni tipos, y no inventa campos ausentes. Cada campo obtenido de este modo queda marcado en observaciones como “extraído de redacción libre; requiere revisión humana”.
+
+Efecto observado: C02 pasó de un campo extraído a cinco. C01 y C03 no cambiaron, y C03 sigue sin tipo, porque el documento no lo contiene.
+
+Archivos: salidas/reglas_v1_original/ contiene la salida antes de la modificación y salidas/reglas/ la salida posterior. El script anterior se conserva como comun_v1_original.py. No se editó ningún resultado a mano.
+
+Estado de revisión: los resultados de C02 deben compararse con el documento original antes de aprobarse. Su aprobación se registra en la hoja de revisión humana.
