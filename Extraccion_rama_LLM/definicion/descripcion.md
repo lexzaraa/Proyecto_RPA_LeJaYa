@@ -1,0 +1,1 @@
+La rama LLM fue simulada. Reutiliza las reglas y no mide capacidades de un modelo.
