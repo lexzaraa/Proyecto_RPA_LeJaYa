@@ -12,3 +12,6 @@ Efecto observado: C02 pasó de un campo extraído a cinco. C01 y C03 no cambiaro
 Archivos: salidas/reglas_v1_original/ contiene la salida antes de la modificación y salidas/reglas/ la salida posterior. El script anterior se conserva como comun_v1_original.py. No se editó ningún resultado a mano.
 
 Estado de revisión: los resultados de C02 deben compararse con el documento original antes de aprobarse. Su aprobación se registra en la hoja de revisión humana.
+
+
+El archivo nuevo generado (C02.json) fue comparado con el original (C02.png) y se observa que con la modificación realizada a la funcion extraer_reglas del archivo "comun.py", se pudieron extraer con éxito los 5 campos
