@@ -1,0 +1,39 @@
+PATRONES_LIBRES = {
+    'solicitante': r'(?:fue\s+)?presentad[ao]\s+por\s+(.+?)(?=\s+para\s+(?:el\s+)?[áa]rea\b|[.;:]|$)',
+    'area': r'\b[áa]rea\s+de\s+(.+?)(?=[.;,]|\s+corresponde\b|$)',
+    'tipo': r'\b(?:corresponde\s+al\s+)?tipo\s+(?!de\b)([^\s.;,:]+(?:\s+[^\s.;,:]+)*?)(?=[.;,]|\s+se\s+solicita\b|$)',
+    'descripcion': r'\bse\s+solicita\s*:\s*(.+)$',
+}
+def extraer_reglas(texto):
+    """Una etiqueta inicia el campo; la siguiente lo termina. Respaldo por redacción libre. No memoriza casos."""
+    etiquetas = r'Identificador|Solicitante|Área|Tipo|Descripción'
+    patron = re.compile(rf'^\s*({etiquetas})\s*:\s*(.*?)(?=^\s*(?:{etiquetas})\s*:|\Z)', re.M | re.S | re.I)
+    mapa = {'identificador':'id_solicitud','solicitante':'solicitante','área':'area','tipo':'tipo','descripción':'descripcion'}
+    datos = dict.fromkeys(CAMPOS)
+    observaciones = []
+    vistos = set()
+    for coincidencia in patron.finditer(texto):
+        campo = mapa[coincidencia[1].lower()]
+        if campo in vistos:
+            datos[campo] = None
+            observaciones.append(f'Etiqueta repetida: {campo}; requiere revisión.')
+        else:
+            datos[campo] = ' '.join(coincidencia[2].split()) or None
+        vistos.add(campo)
+    # Permite identificar SOL en texto libre; no infiere nombres ni catálogos.
+    if 'id_solicitud' not in vistos:
+        ids = re.findall(r'(?<![\w-])SOL-\d{3}(?![\w-])', texto)
+        datos['id_solicitud'] = ids[0] if len(ids) == 1 else None
+
+    # Respaldo para redacción en párrafo: solo campos sin etiqueta y solo si el patrón coincide.
+    plano = ' '.join(texto.split())
+    for campo, regex in PATRONES_LIBRES.items():
+        if campo in vistos or datos[campo] is not None:
+            continue
+        m = re.search(regex, plano, re.I)
+        if m:
+            datos[campo] = m.group(1).strip() or None
+            observaciones.append(f'Campo {campo} extraído de redacción libre; requiere revisión humana.')
+
+    
+    return Extraccion(**datos, observaciones=observaciones)
