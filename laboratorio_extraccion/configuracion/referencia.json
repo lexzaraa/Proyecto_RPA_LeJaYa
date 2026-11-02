@@ -1,0 +1,35 @@
+{
+  "C01": {
+    "campos": {
+      "id_solicitud": "SOL-801",
+      "solicitante": "Persona ficticia Alba",
+      "area": "Administración",
+      "tipo": "Equipo",
+      "descripcion": "Revisar la pantalla del equipo de práctica."
+    },
+    "transcripcion_original": "SOLICITUD FICTICIA - CURSO RPA\n\nIdentificador: SOL-801\nSolicitante: Persona ficticia Alba\nÁrea: Administración\nTipo: Equipo\nDescripción: Revisar la pantalla del equipo de práctica.\n",
+    "nota": ""
+  },
+  "C02": {
+    "campos": {
+      "id_solicitud": "SOL-802",
+      "solicitante": "Persona ficticia Bruno",
+      "area": "Docencia",
+      "tipo": "Acceso",
+      "descripcion": "Habilitar acceso al aula de práctica."
+    },
+    "transcripcion_original": "SOLICITUD FICTICIA - CURSO RPA\n\nLa solicitud SOL-802 fue presentada por Persona ficticia Bruno\npara el área de Docencia. Corresponde al tipo Acceso. Se\nsolicita: Habilitar acceso al aula de práctica.\n",
+    "nota": ""
+  },
+  "C03": {
+    "campos": {
+      "id_solicitud": "SOL-803",
+      "solicitante": "Persona ficticia Celia",
+      "area": "Biblioteca",
+      "tipo": null,
+      "descripcion": "Revisar la lámpara del espacio de lectura."
+    },
+    "transcripcion_original": "SOLICITUD FICTICIA - CURSO RPA\n\nIdentificador: SOL-803\nSolicitante: Persona ficticia Celia\nÁrea: Biblioteca\nDescripción: Revisar la lámpara del espacio de lectura.\n",
+    "nota": "C03 no contiene Tipo; no se puede inferir."
+  }
+}

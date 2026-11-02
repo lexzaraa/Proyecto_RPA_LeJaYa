@@ -1,0 +1,7 @@
+# Versiones verificadas en macOS con Python 3.12; ejecutar la aceptación en Windows.
+PyMuPDF==1.28.2
+pytesseract==0.3.13
+Pillow==12.3.0
+openai==3.29.0
+pydantic==2.14.1
+python-dotenv==1.2.4

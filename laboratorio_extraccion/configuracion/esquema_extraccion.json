@@ -1,0 +1,77 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "id_solicitud": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Id Solicitud"
+    },
+    "solicitante": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Solicitante"
+    },
+    "area": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Area"
+    },
+    "tipo": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Tipo"
+    },
+    "descripcion": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Descripcion"
+    },
+    "observaciones": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Observaciones",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id_solicitud",
+    "solicitante",
+    "area",
+    "tipo",
+    "descripcion",
+    "observaciones"
+  ],
+  "title": "Extraccion",
+  "type": "object"
+}

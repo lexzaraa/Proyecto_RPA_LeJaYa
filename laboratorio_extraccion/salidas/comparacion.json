@@ -1,0 +1,246 @@
+[
+  {
+    "caso": "C01",
+    "metodo": "reglas",
+    "modo": "real",
+    "evaluable_para_rendimiento": true,
+    "errores_validacion": {},
+    "comparacion_por_campo": {
+      "id_solicitud": {
+        "esperado": "SOL-801",
+        "observado": "SOL-801",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "solicitante": {
+        "esperado": "Persona ficticia Alba",
+        "observado": "Persona ficticia Alba",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "area": {
+        "esperado": "Administración",
+        "observado": "Administración",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "tipo": {
+        "esperado": "Equipo",
+        "observado": "Equipo",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "descripcion": {
+        "esperado": "Revisar la pantalla del equipo de práctica.",
+        "observado": "Revisar la pantalla del equipo de práctica.",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      }
+    },
+    "aciertos_sobre_cinco": 5
+  },
+  {
+    "caso": "C01",
+    "metodo": "llm_simulado",
+    "modo": "simulado",
+    "evaluable_para_rendimiento": false,
+    "errores_validacion": {},
+    "comparacion_por_campo": {
+      "id_solicitud": {
+        "esperado": "SOL-801",
+        "observado": "SOL-801",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "solicitante": {
+        "esperado": "Persona ficticia Alba",
+        "observado": "Persona ficticia Alba",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "area": {
+        "esperado": "Administración",
+        "observado": "Administración",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "tipo": {
+        "esperado": "Equipo",
+        "observado": "Equipo",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "descripcion": {
+        "esperado": "Revisar la pantalla del equipo de práctica.",
+        "observado": "Revisar la pantalla del equipo de práctica.",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      }
+    },
+    "aciertos_sobre_cinco": null
+  },
+  {
+    "caso": "C02",
+    "metodo": "reglas",
+    "modo": "real",
+    "evaluable_para_rendimiento": true,
+    "errores_validacion": {},
+    "comparacion_por_campo": {
+      "id_solicitud": {
+        "esperado": "SOL-802",
+        "observado": "SOL-802",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "solicitante": {
+        "esperado": "Persona ficticia Bruno",
+        "observado": "Persona ficticia Bruno",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "area": {
+        "esperado": "Docencia",
+        "observado": "Docencia",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "tipo": {
+        "esperado": "Acceso",
+        "observado": "Acceso",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "descripcion": {
+        "esperado": "Habilitar acceso al aula de práctica.",
+        "observado": "Habilitar acceso al aula de práctica.",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      }
+    },
+    "aciertos_sobre_cinco": 5
+  },
+  {
+    "caso": "C02",
+    "metodo": "llm_simulado",
+    "modo": "simulado",
+    "evaluable_para_rendimiento": false,
+    "errores_validacion": {},
+    "comparacion_por_campo": {
+      "id_solicitud": {
+        "esperado": "SOL-802",
+        "observado": "SOL-802",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "solicitante": {
+        "esperado": "Persona ficticia Bruno",
+        "observado": "Persona ficticia Bruno",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "area": {
+        "esperado": "Docencia",
+        "observado": "Docencia",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "tipo": {
+        "esperado": "Acceso",
+        "observado": "Acceso",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "descripcion": {
+        "esperado": "Habilitar acceso al aula de práctica.",
+        "observado": "Habilitar acceso al aula de práctica.",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      }
+    },
+    "aciertos_sobre_cinco": null
+  },
+  {
+    "caso": "C03",
+    "metodo": "reglas",
+    "modo": "real",
+    "evaluable_para_rendimiento": true,
+    "errores_validacion": {
+      "tipo": "dato_ausente_o_incierto"
+    },
+    "comparacion_por_campo": {
+      "id_solicitud": {
+        "esperado": "SOL-803",
+        "observado": "SOL-803",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "solicitante": {
+        "esperado": "Persona ficticia Celia",
+        "observado": "Persona ficticia Celia",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "area": {
+        "esperado": "Biblioteca",
+        "observado": "Biblioteca",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "tipo": {
+        "esperado": null,
+        "observado": null,
+        "coincide": true,
+        "categoria": "dato_ausente_o_incierto"
+      },
+      "descripcion": {
+        "esperado": "Revisar la lámpara del espacio de lectura.",
+        "observado": "Revisar la lámpara del espacio de lectura.",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      }
+    },
+    "aciertos_sobre_cinco": 5
+  },
+  {
+    "caso": "C03",
+    "metodo": "llm_simulado",
+    "modo": "simulado",
+    "evaluable_para_rendimiento": false,
+    "errores_validacion": {
+      "tipo": "dato_ausente_o_incierto"
+    },
+    "comparacion_por_campo": {
+      "id_solicitud": {
+        "esperado": "SOL-803",
+        "observado": "SOL-803",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "solicitante": {
+        "esperado": "Persona ficticia Celia",
+        "observado": "Persona ficticia Celia",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "area": {
+        "esperado": "Biblioteca",
+        "observado": "Biblioteca",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      },
+      "tipo": {
+        "esperado": null,
+        "observado": null,
+        "coincide": true,
+        "categoria": "dato_ausente_o_incierto"
+      },
+      "descripcion": {
+        "esperado": "Revisar la lámpara del espacio de lectura.",
+        "observado": "Revisar la lámpara del espacio de lectura.",
+        "coincide": true,
+        "categoria": "coincide_con_referencia"
+      }
+    },
+    "aciertos_sobre_cinco": null
+  }
+]

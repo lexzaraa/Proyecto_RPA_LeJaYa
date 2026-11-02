@@ -1,0 +1,11 @@
+SOLICITUD FICTICIA - CURSO RPA
+
+Identificador: SOL-801
+
+Solicitante: Persona ficticia Alba
+
+Área: Administración
+
+Tipo: Equipo
+
+Descripción: Revisar la pantalla del equipo de práctica.
